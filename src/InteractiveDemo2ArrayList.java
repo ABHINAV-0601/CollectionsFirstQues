@@ -22,7 +22,7 @@ public class InteractiveDemo2ArrayList {
         double totalMarks = 0.0;
         while(iterator.hasNext()){
             Student element = iterator.next();
-            totalMarks += element.getMarks();
+            totalMarks += element.getCpi();
             if(element.getName().charAt(0) == 'B'){
                 iterator.remove();
             }
