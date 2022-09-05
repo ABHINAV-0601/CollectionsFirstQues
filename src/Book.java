@@ -1,4 +1,6 @@
-public class Book {
+import java.util.Comparator;
+
+public class Book implements Comparator<Book> {
     private String bookName;
     private String author;
     private long isbn;
@@ -49,4 +51,9 @@ public class Book {
                 ", price=" + price +
                 '}';
     }
+    @Override
+    public int compare(Book book1,Book book2){
+        return book1.getAuthor().compareTo(book2.getAuthor());
+    }
+
 }

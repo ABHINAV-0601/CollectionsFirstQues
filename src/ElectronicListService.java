@@ -27,7 +27,7 @@ public class ElectronicListService {
         boolean flag = false;
         Iterator<String> stringIterator = itemList.iterator();
         while(stringIterator.hasNext()){
-            if(stringIterator.next().equals("Computer")){
+            if(stringIterator.next().equals(removeItem)){
                 stringIterator.remove();
                 flag = true;
             }
